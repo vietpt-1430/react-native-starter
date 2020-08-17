@@ -26,6 +26,8 @@ import {
 
 import InputComponent from './src/Components/InputComponent';
 import CatComponent from './src/Components/CatComponent';
+import FlatListComponent from './src/Components/FlatListComponent';
+import { postDemo } from './src/data/post';
 
 const App: () => React$Node = () => {
   return (
@@ -41,11 +43,8 @@ const App: () => React$Node = () => {
               <Text style={styles.footer}>Engine: Hermes</Text>
             </View>
           )}
-          <View style={styles.body}>
-            <InputComponent />
-            <CatComponent />
-          </View>
         </ScrollView>
+        <FlatListComponent items={postDemo} />
       </SafeAreaView>
     </>
   );
