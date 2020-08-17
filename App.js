@@ -24,7 +24,8 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-import InputComponent from './src/Components/InputComponent'
+import InputComponent from './src/Components/InputComponent';
+import CatComponent from './src/Components/CatComponent';
 
 const App: () => React$Node = () => {
   return (
@@ -41,15 +42,9 @@ const App: () => React$Node = () => {
             </View>
           )}
           <View style={styles.body}>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Step One</Text>
-              <Text style={styles.sectionDescription}>
-                Welcome to <Text style={styles.highlight}>VietPT </Text> App.
-                We can make awesome that master.
-              </Text>
-            </View>
-          </View>
             <InputComponent />
+            <CatComponent />
+          </View>
         </ScrollView>
       </SafeAreaView>
     </>
